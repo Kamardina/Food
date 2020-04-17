@@ -1,0 +1,40 @@
+.menu{
+    background: {
+        image: url(../images/pic4.png), linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
+        blend-mode: overlay;
+        size: contain;
+    }
+    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+    .columns:first-child{
+        margin-right: 180px;
+        margin-bottom: 107px;
+       
+    }
+    .columns:nth-child(2){
+        margin-bottom: 68px;
+    }
+h2{
+    margin-top: 100px;
+    text: {
+        align: center;
+    }
+}
+&_items{
+
+}
+&_item{
+list-style-type: none;
+}
+p:first-child{
+    display: flex;
+    justify-content: space-between;
+    color: $color1;
+    font: {
+        family: $font_header;
+        weight: normal;
+        size: 21px;
+    }
+line-height: 1,71rem;
+border-bottom: 1px solid $color1 ;
+}
+}

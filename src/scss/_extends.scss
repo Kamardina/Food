@@ -1,0 +1,36 @@
+@mixin transitions($style) {
+    transition: $style 0.3s linear;
+    
+}
+
+@mixin tablet() {
+    @media only screen and (max-width: 768px)
+    {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media  screen and (max-width: 650px){
+        @content;
+    }
+}
+
+%titles {
+    font: {
+        family:$font_header;
+        size: 2.25em;
+    }
+    line: {
+        height: 1.5em;
+    }
+    text: {
+        align: center;
+    }
+}
+    %forma {
+        display: block;
+            margin: 0 10px;
+            height: 36px;
+            width: 190px;
+    }

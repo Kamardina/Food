@@ -1,0 +1,20 @@
+.about {
+background: {
+    image: url(../images/pattern.jpg), linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+    blend-mode: screen;
+    size: contain;
+}
+box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+text: {
+    align: center;
+}
+&_cook {
+  img{
+     transform: translateX(18%);
+  }
+}
+}
+
+.title_orange{
+   
+}

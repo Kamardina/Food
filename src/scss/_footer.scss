@@ -1,0 +1,31 @@
+.footer{
+    background: #000000;
+    opacity: 0.75;
+    height: 375px;
+    color: #fff;
+    text: {
+        align: center;
+    }
+h2{
+    font: {
+        size: 21px;
+    }
+    &::after {
+        content: url(../images/decoration_2.png);
+        display: block;
+        margin: 15px auto;
+    
+    }
+   
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+   
+}
+li{
+    list-style-type: none;
+    margin: 30px 2.5px;
+}
+}

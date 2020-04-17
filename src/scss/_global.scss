@@ -1,0 +1,53 @@
+// Общие правила
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+font: {
+    family: $font_text;
+    size: 16px;
+}
+line-height: 1.5em; 
+color: $color3;
+}
+section{
+    min-height: $height-section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+}
+
+a{
+    color: #fff;
+}
+
+
+.title {
+    @extend %titles;
+    &_orange{
+   color: $color1;
+   &::after {
+       content: url(../images/decoration_2.svg);
+       display: block;
+       margin: 15px auto;
+   }
+}
+
+    &_white {
+color: #fff;
+&::after {
+    content: url(../images/Vector.svg);
+    display: block;
+    margin: 15px auto;
+
+}
+    }
+}

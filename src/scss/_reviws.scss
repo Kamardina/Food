@@ -1,0 +1,36 @@
+.reviews{
+    background: {
+        image: url(../images/bg_2.jpg);
+        repeat: no-repeat;
+        size: cover;
+    }
+    
+    &_item {
+        background: {
+            color:rgba(0, 0, 0, 0.8)
+    }
+    padding: 65px 80px;
+
+    font: {
+        weight: bold;
+        size: 24px;
+    }
+    line-height: 1.75em;
+    color: #fff;
+    text: 
+    {align: center;}
+    }
+    h2{
+        font: {
+            family: $font_header;
+            size: 36px;
+        }
+        line-height:1.15em ;
+        padding-bottom: 65px;
+    }
+    span{
+        font-weight : lighter;
+        display: block;
+        padding-top: 50px;
+    }
+}

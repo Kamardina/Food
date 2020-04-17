@@ -1,0 +1,70 @@
+.firstscreen{
+
+    background: {
+        image: url(../images/bg_1.jpg);
+        repeat: no-repeat;
+        size: cover;
+    }
+    &_title{
+        font: {
+                family: $font_header;
+                size: 5.62em;
+            }
+            text: {
+                align: center;
+                transforn: lowercase;
+                shadow: 2px 2px 0px #000000;
+            }
+            color: #fff;
+            line-height: 1em;
+            
+            &::after{
+                content: url(../images/Vector.svg);
+                display: block;
+                margin: o auto;
+            }
+            @include phone() {
+                font: {
+                    size: 4em;
+                }
+            }
+        }
+    
+
+    &_buttons{
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+        display: flex;
+        justify-content: center;
+    
+    @include tablet {
+        align-items: center;
+        flex-direction: column;
+    }
+    }
+    &_button{
+
+        height: 80px;
+        margin: 15px;
+        background: {
+        color: rgba(255, 255, 255, 0.6)
+}
+border: 1px solid #fff;
+padding: 30px 60px;
+@include transitions(background-color);
+&:hover{
+    background: {
+        color: rgba(255, 255, 255, 0.8)
+    }
+    color: #fff;
+
+}
+@include tablet {
+    width: 334px;
+}
+    }
+
+    
+}

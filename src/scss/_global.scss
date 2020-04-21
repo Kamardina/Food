@@ -29,10 +29,18 @@ a{
     color: #fff;
 }
 
+ul {
+    list:{
+        style-type: none;
+    }
+    margin:0;
+    padding:0;
+}
 
 .title {
-    @extend %titles;
+    
     &_orange{
+    @extend %titles;
    color: $color1;
    &::after {
        content: url(../images/decoration_2.svg);
@@ -42,6 +50,7 @@ a{
 }
 
     &_white {
+@extend %titles;
 color: #fff;
 &::after {
     content: url(../images/Vector.svg);

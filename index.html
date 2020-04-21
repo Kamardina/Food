@@ -15,7 +15,24 @@
 </head>
 
 <body>
-   <section class="firstscreen">
+    <section class="navigation">
+    <div class="container">
+        <div class="row align-center">
+            <div class="columns">
+                <ul class="navigation_menu" data-smooth-scroll>
+                    <li><a href="#first">Firstscreen</a></li>
+                    <li><a href="#second">About</a></li>
+                    <li><a href="#third">Ingredients</a></li>
+                    <li><a href="#fourth">Menu</a></li>
+                    <li><a href="#fifth">Reviews</a></li>
+                    <li><a href="#sixth">Reservation</a></li>
+                    <li><a href="#seventh">Footer</a></li>
+                </ul>
+            </div>
+      </div>
+    </div> 
+        </section>
+   <section class="firstscreen" id="first">
        <div class="container">
            <div class="row">
                <div class="columns">
@@ -28,7 +45,7 @@
            </div>
        </div>
    </section>
-   <section class="about">
+   <section class="about" id="second">
        <div class="container">
            <div class="row align-center">
                <div class="columns about_cook medium-10 large-6"> 
@@ -42,7 +59,7 @@
              </div>
        </div>
    </section>
-   <section class="ingredients">
+   <section class="ingredients" id="third">
        <div class="container">
            <div class="row ">
                <div class="ingredients_item columns small-12 large-6 large-offset-6"> 
@@ -63,10 +80,10 @@
            </div>
        </div>
    </section>
-   <section class="menu">
+   <section class="menu" id="fourth">
    <div class="container">
-       <div class="row align-spaced">
-           <div class="columns small-12 medium-6 large-5">
+       <div class="row align-center">
+           <div class="columns small-12 medium-11 large-5">
                <h2 class="title_orange">Appetisers</h2>
                <ul class="menu_items">
                    <li class="menu_item">
@@ -137,7 +154,7 @@
                    </li>
                </ul>
            </div>
-           <div class="columns small-12 medium-6 large-5">
+           <div class="columns small-12 medium-11 large-5 large-offset-2">
                <h2 class="title_orange">Starters</h2>
                <ul class="menu_items">
                    <li class="menu_item">
@@ -213,7 +230,7 @@
        </div>
    </div>
    </section>
-   <section class="reviews">
+   <section class="reviews" id="fifth">
        <div class="container">
            <div class="row align-center">
                <div class="columns  reviews_item small-12 large-8"> 
@@ -226,39 +243,41 @@
            </div>
        </div>
    </section>
-   <section class="reservation">
+   <section class="reservation" id="sixth">
        <div class="container">
            <div class="row align-center">
-               <div class="columns reservation_picture show-for-large large-6"> 
+               <div class="columns reservation_picture show-for-large large-3"> 
                    <img src="../images/pic_4.jpg" alt="">
+               </div>
+               <div class="columns reservation_picture show-for-large large-3"> 
                    <img src="../images/pic_5.jpg" alt="">
                </div>
-               <div class="columns reservation_form small-12 medium-10 large-6"> 
+               <div class="columns reservation_form small-12 medium-10 large-5 large-offset-1"> 
                    <h2 class="title_orange">Appetisers</h2>
                    <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p> 
-                   <p>  Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-              <form action="">
-                       <p>
+                   <p> Perfect materials and freshly baked food.</p>
+              <form action="" class="row align-center">
+                       <p class='columns small-6'>
                           <label for="">Name</label>  
                           <input type="text" placeholder="your name *">
                        </p>
-                       <p>
+                       <p class='columns small-6'>
                           <label for="">Date</label>  
                           <input type="date" placeholder="date *">
                        </p>
-                       <p>
+                       <p class='columns small-6'>
                           <label for="">email</label>  
                           <input type="email" placeholder="your email *">
                        </p>
-                       <p>
+                       <p class='columns small-6'>
                           <label for="">Party namber</label>  
                           <input type="text" placeholder="party namber">
                       </p>
-                      <p class="link"><input type="button" value="Book now!"><p>
+                      <input class="columns small-6  link" type="button" value="Book now!">
                    </form>    
        </div>
    </section>
-   <section class="footer">
+   <section class="footer" id="seventh">
        <div class="container">
            <div class="row align-spaced">
                <div class="columns small-12 medium-12 large-5">
@@ -286,15 +305,6 @@
        </div>
        </section>
    
-
-     <!-- <div class="columns large-12 medium-12 small-12 footer__copyright">
-                <p class="copyright"> ©
-                    <script>
-                        var date = new Date;
-                        document.write(date.getFullYear(), " Axure Themes");
-                    </script>
-                </p>
-            </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
 </body>

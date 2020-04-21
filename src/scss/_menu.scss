@@ -5,22 +5,13 @@
         size: contain;
     }
     box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
-    .columns:first-child{
-        margin-right: 180px;
-        margin-bottom: 107px;
-       
-    }
-    .columns:nth-child(2){
-        margin-bottom: 68px;
-    }
+    padding: 100px 0;
+    
 h2{
-    margin-top: 100px;
+   
     text: {
         align: center;
     }
-}
-&_items{
-
 }
 &_item{
 list-style-type: none;

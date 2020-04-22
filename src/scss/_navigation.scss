@@ -1,11 +1,26 @@
 .navigation{
-    min-height: $height-section/8;
-    background-color: rgba(0,0,0, 0.9);
+    min-height: 80px;
+    padding: 0!important;
+    
+    @include phone() {
+        min-height:0;
+        position: absolute;
+    left: 0;
+    right: 0;
+    }
+
+    .container {
+        background-color: rgba(0,0,0, 0.9);
+           }
     
     &_menu{
     display: flex;
     list-style-type: none; 
     flex-direction: row;
+
+     @include phone() {
+         flex-direction:column;
+     }
     
     text: {
         transform: uppercase;
@@ -15,8 +30,8 @@
     li{
         flex-grow: 1;
         height: 80px;
-        margin: 0 15px;
-        padding: 30px;
+        // margin: 0 15px;
+        
 
         a{
             display: block;
@@ -25,7 +40,20 @@
             text-align: center;
             color: #fff;
             font-weight: bold;
+            padding: 30px 0;
+
+            @include phone() {
+                padding: 15px 0;
+            }
         }
 }
+    }
+}
+
+.title-bar{
+    padding: 30px;
+
+    .menu-icon {
+
     }
 }
